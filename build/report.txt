@@ -1,0 +1,13 @@
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:11:26: missed: couldn't vectorize loop
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:50: missed: not vectorized: complicated access pattern.
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:13:31: missed: couldn't vectorize loop
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:20: missed: not vectorized: complicated access pattern.
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:9:6: note: vectorized 0 loops in function.
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Analysis failed with vector mode V4DF
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** The result for vector mode V32QI would be the same
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Re-trying analysis with vector mode V16QI
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Analysis failed with vector mode V16QI
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Re-trying analysis with vector mode V8QI
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Analysis failed with vector mode V8QI
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Re-trying analysis with vector mode V4QI
+/global/homes/n/northw/Project3/dgemv-vectorized.cpp:15:29: note: ***** Analysis failed with vector mode V4QI
