@@ -22,13 +22,15 @@ void my_dgemv(int n, double* A, double* x, double* y) {
    //    printf("my_dgemv(): For actual timing runs, please comment out these printf() and omp_get_*() statements. \n");
    // }
 
-   #pragma omp parallel for
+    #pragma omp parallel for
     for (int row = 0; row < n; row++)
     {
+        double temp = 0.0;
         for (int col = 0; col < n; col++)
         {
-            y[row] = y[row] + A[ (row * n) + col ] * x[col];
+            temp += A[ (row * n) + col ] * x[col];
         }
+        y[row] += temp;
     }
 
 }
