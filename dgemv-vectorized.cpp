@@ -10,9 +10,11 @@ void my_dgemv(int n, double* A, double* x, double* y) {
    // insert your code here: implementation of vectorized vector-matrix multiply
    for (int row = 0; row < n; row++)
     {
+        double temp = 0.0;
         for (int col = 0; col < n; col++)
         {
-            y[row] = y[row] + A[ (row * n) + col ] * x[col];
+            temp += A[ (row * n) + col ] * x[col];
         }
+        y[row] += temp;
     }
 }
